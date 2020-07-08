@@ -12,7 +12,5 @@ Counter(labels)
 
 [(x.orth_,x.pos_, x.lemma_) for x in [y 
                                       for y
-                                      in nlp(str(sentences[20])) 
+                                      in nlp(str(article)) 
                                       if not y.is_stop and y.pos_ != 'PUNCT']]
-                                      
-pprint([(X, X.ent_iob_, X.ent_type_) for X in article])
